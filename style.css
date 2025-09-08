@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+  --base-color: #959595;
+  --text-color: #000;
+  --base-variant: #e8e9ed;
+  --primary-color: #3b4562;
+  --hover-color:  #a18a4c;
+  --nav-text-color: #ffff;
+}
+
+
+.darkmode {
+  --base-color: #030656;
+  --text-color: #ffffff;
+  --base-variant: #101425;
+  --primary-color: #3a435d;
+}
+body{
+    background-color: var(--base-color);
+}
+/*Nav*/
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: var(--primary-color);
+}
+.logo{
+    width: 10%;
+}
+nav ul li{
+    display: inline;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: var(--nav-text-color);
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: var(--hover-color);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.background-image{
+    background-image: url(/images/expedition-background.jpg);
+    background-size: cover; 
+    background-position: center;
+    height: 30rem; 
+    width: 100%; 
+    position: relative; 
+}
+
