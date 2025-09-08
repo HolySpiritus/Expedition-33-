@@ -6,12 +6,13 @@
 }
 
 :root {
-  --base-color: #959595;
+  --base-color: #d6d0d0;
   --text-color: #000;
   --base-variant: #e8e9ed;
   --primary-color: #3b4562;
   --hover-color:  #a18a4c;
   --nav-text-color: #ffff;
+  --intro-border-color: #000;
 }
 
 
@@ -59,6 +60,14 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%;
 }
+/* Container stuff*/
+.container{
+    padding: 10px 10%;
+}
+.container-big{
+    padding: 60px 10%;
+}
+/*Intro stuff*/
 .background-image{
     background-image: url(/images/expedition-background.jpg);
     background-size: cover; 
@@ -67,4 +76,93 @@ nav ul li a:hover::after{
     width: 100%; 
     position: relative; 
 }
+.intro{
+margin: 1rem;
+ padding-left: 1rem;
+ padding-right: 1rem;
+ border: 1rem solid var(--intro-border-color);
 
+}
+.intro h1{
+  display: flex;
+  justify-content: center;
+  color: var(--text-color);
+  font-family: "Cinzel", serif;
+  font-weight: 400rem;
+  font-style: normal;
+  font-size: 3rem;
+}
+.intro p{
+   display: flex;
+  justify-content: center;
+  color: var(--text-color);
+  font-family: "Cinzel", serif;
+  font-weight: 400rem;
+  font-style: normal;
+  font-size: 1.5rem; 
+  padding: 0 1rem 0 1rem;
+}
+/*Character stuff*/
+.background-gustave{
+    background-image: url(/images/gustave-background.jpg);
+    background-size: cover; 
+    background-position: center;
+    height: 30rem; 
+    width: 100%; 
+    position: relative;
+}
+.characters h1{
+    display: flex;
+    justify-content: center;
+    color: var(--text-color);
+    font-family: "Cinzel", serif;
+    font-weight: 400rem;
+    font-style: normal;
+    font-size: 3rem;
+    border: 1rem solid var(--intro-border-color);
+    margin-bottom: 0.5rem;
+}
+.card-row {
+  margin-top: 2rem;
+  display: flex;
+  gap: 10rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+  width: 280px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 15px 0 8px;
+  font-size: 1.2rem;
+  color: var(--text-color);
+  font-family: "Cinzel", serif;
+  font-weight: 400rem;
+  font-style: normal;
+
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: var(--text-color);
+  padding: 0 15px 20px;
+  font-family: "Cinzel", serif;
+  font-weight: 400rem;
+  font-style: normal;
+}
